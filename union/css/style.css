@@ -1,0 +1,1213 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* =======================================================
+*
+* 	Template Style 
+*	Edit this section
+*
+* ======================================================= */
+body {
+  font-family: "PT Sans", Arial, serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #666666;
+  color: #7f7f7f;
+  background: #fff;
+  height: 100%;
+  position: relative;
+}
+
+a {
+  color: #ff3b30;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+a:hover, a:active, a:focus {
+  color: #ff3b30;
+  outline: none;
+}
+
+p {
+  margin-bottom: 1.5em;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  font-family: "PT Sans", Arial, serif;
+  font-weight: 400;
+  margin: 0 0 30px 0;
+}
+
+::-webkit-selection {
+  color: #fff;
+  background: #1fb5f6;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #1fb5f6;
+}
+
+::selection {
+  color: #fff;
+  background: #1fb5f6;
+}
+
+#legionmarket-header {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  opacity: 1;
+  top: 0;
+}
+#legionmarket-header .navbar {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#legionmarket-header #navbar .navbar-right {
+  margin-right: 0;
+}
+@media screen and (max-width: 992px) {
+  #legionmarket-header #navbar .navbar-right {
+    margin-right: -15px;
+  }
+}
+#legionmarket-header #navbar li a {
+  font-family: "PT Sans", Arial, serif;
+  color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+}
+@media screen and (max-width: 992px) {
+  #legionmarket-header #navbar li a {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+#legionmarket-header #navbar li a span {
+  position: relative;
+  display: block;
+  padding-bottom: 2px;
+}
+#legionmarket-header #navbar li a span:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+#legionmarket-header #navbar li a:hover {
+  color: #000;
+}
+#legionmarket-header #navbar li a:hover span:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
+}
+#legionmarket-header #navbar li.active a {
+  background: transparent;
+  background: none;
+}
+@media screen and (max-width: 480px) {
+  #legionmarket-header #navbar li.active a {
+    color: #ff3b30;
+  }
+}
+#legionmarket-header #navbar li.active a span:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  background-color: #ff3b30;
+}
+@media screen and (max-width: 480px) {
+  #legionmarket-header #navbar li.active a span:before {
+    background-color: transparent;
+  }
+}
+#legionmarket-header #navbar li.call-to-action a {
+  border: 2px solid #ff3b30;
+  padding: 5px 10px 3px 10px;
+  margin: 12px 0 0 0px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px;
+}
+#legionmarket-header #navbar li.call-to-action a:hover {
+  background-color: #ff3b30;
+  color: #fff;
+}
+#legionmarket-header #navbar li.call-to-action a span:before {
+  background-color: transparent;
+}
+#legionmarket-header .navbar-brand {
+  float: left;
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  padding-left: 0;
+  color: #535659;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+#legionmarket-header .navbar-brand > span {
+  color: #ff3b30;
+}
+@media screen and (max-width: 992px) {
+  #legionmarket-header .navbar-brand {
+    padding-left: 10px !important;
+    padding-right: 0 !important;
+  }
+}
+#legionmarket-header.navbar-fixed-top {
+  position: fixed !important;
+  background: #fff;
+  -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+  margin-top: 0px;
+  top: 0;
+}
+#legionmarket-header.navbar-fixed-top .navbar-brand {
+  color: #535659;
+}
+#legionmarket-header.navbar-fixed-top #navbar li a {
+  color: rgba(0, 0, 0, 0.5) !important;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+#legionmarket-header.navbar-fixed-top #navbar li a:hover {
+  color: #ff3b30;
+}
+#legionmarket-header.navbar-fixed-top #navbar li.active a {
+  color: #ff3b30 !important;
+}
+@media screen and (max-width: 768px) {
+  #legionmarket-header.navbar-fixed-top #navbar li.active a {
+    color: #ff3b30 !important;
+  }
+}
+#legionmarket-header.navbar-fixed-top #navbar li.active a span:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  background-color: #ff3b30;
+}
+@media screen and (max-width: 768px) {
+  #legionmarket-header.navbar-fixed-top #navbar li.active a span:before {
+    background-color: transparent;
+  }
+}
+#legionmarket-header.navbar-fixed-top #navbar li.call-to-action a {
+  border: 2px solid #ff3b30;
+  padding: 5px 10px 3px 10px;
+  margin: 12px 0 0 0px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px;
+}
+#legionmarket-header.navbar-fixed-top #navbar li.call-to-action a:hover {
+  background-color: #ff3b30;
+  color: #fff !important;
+}
+#legionmarket-header.navbar-fixed-top #navbar li.call-to-action a span:before {
+  background-color: transparent;
+}
+#legionmarket-header .navbar-default {
+  border: transparent;
+  background: #fff;
+  margin: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
+}
+@media screen and (max-width: 768px) {
+  #legionmarket-header .navbar-default {
+    margin-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+#legionmarket-header .navbar-default .brand-slogan {
+  margin: 28px 0 0 15px;
+  float: left;
+  letter-spacing: 2px;
+  color: #adadad;
+}
+#legionmarket-header .navbar-default .brand-slogan em {
+  color: #ff3b30;
+  font-style: normal;
+}
+
+#legionmarket-home {
+  background-color: transparent;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+  background-color: #9fa3a5;
+  color: #fff;
+}
+#legionmarket-home a {
+  color: rgba(255, 255, 255, 0.8) !important;
+  text-decoration: underline;
+}
+#legionmarket-home a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+#legionmarket-home .gradient {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.3);
+}
+#legionmarket-home, #legionmarket-home .text-wrap {
+  height: 900px;
+}
+#legionmarket-home .text-wrap {
+  display: table;
+  width: 100%;
+  position: relative;
+  z-index: 4;
+}
+#legionmarket-home .text-inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+#legionmarket-home .text-inner h1 {
+  font-size: 38px;
+  text-transform: uppercase;
+  color: white;
+  margin: 0 0 20px 0;
+  font-weight: 700;
+}
+#legionmarket-home .text-inner h2 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 60px 0;
+}
+#legionmarket-home .text-inner .call-to-action {
+  display: block;
+  width: 100%;
+}
+#legionmarket-home .text-inner .call-to-action a {
+  width: 230px;
+  display: inline-block;
+  font-size: 20px;
+  padding: 15px 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  margin-right: 10px;
+  -webkit-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
+  -ms-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
+  -o-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
+}
+#legionmarket-home .text-inner .call-to-action a.demo {
+  border: 2px solid #fff;
+  text-decoration: none !important;
+}
+@media screen and (max-width: 768px) {
+  #legionmarket-home .text-inner .call-to-action a.demo {
+    margin-bottom: 20px;
+  }
+}
+#legionmarket-home .text-inner .call-to-action a.demo:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+#legionmarket-home .text-inner .call-to-action a.download {
+  border: 2px solid #ff3b30;
+  background: #ff3b30;
+  text-decoration: none !important;
+}
+
+#legionmarket-services, #legionmarket-testimony, #legionmarket-explore, #legionmarket-faq, #legionmarket-team, #legionmarket-trusted, #legionmarket-footer {
+  padding: 5em 0;
+}
+@media screen and (max-width: 768px) {
+  #legionmarket-services, #legionmarket-testimony, #legionmarket-explore, #legionmarket-faq, #legionmarket-team, #legionmarket-trusted, #legionmarket-footer {
+    padding: 2em 0;
+  }
+}
+
+#legionmarket-work, #legionmarket-counters {
+  padding: 7em 0;
+}
+@media screen and (max-width: 768px) {
+  #legionmarket-work, #legionmarket-counters {
+    padding: 4em 0;
+  }
+}
+
+.legionmarket-explore {
+  padding-bottom: 40px;
+}
+
+.legionmarket-explore-bg-color {
+  width: 100%;
+  background: #f1f1f1;
+  padding: 80px 0;
+  margin-bottom: 0;
+}
+
+.mt {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.mt h4 {
+  position: relative;
+  padding-left: 40px;
+  font-size: 20px;
+}
+.mt h4 i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #1fb5f6;
+}
+.mt > div {
+  margin-bottom: 40px;
+}
+.mt .list-nav {
+  margin: 50px 0 0 0;
+  padding: 0;
+}
+.mt .list-nav li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.mt .list-nav li i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 18px;
+  color: #1fb5f6;
+}
+
+#legionmarket-testimony .wrap-testimony {
+  position: relative;
+  width: 100%;
+}
+#legionmarket-testimony .wrap-testimony .testimony-slide {
+  text-align: center;
+}
+#legionmarket-testimony .wrap-testimony .testimony-slide span {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+#legionmarket-testimony .wrap-testimony .testimony-slide span a.twitter {
+  color: #1fb5f6;
+  font-weight: 300;
+}
+#legionmarket-testimony .wrap-testimony .testimony-slide figure {
+  margin-bottom: 20px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+#legionmarket-testimony .wrap-testimony .testimony-slide figure img {
+  width: 90px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+#legionmarket-testimony .wrap-testimony .testimony-slide blockquote {
+  border: none;
+  margin: 0 auto;
+  width: 72%;
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 992px) {
+  #legionmarket-testimony .wrap-testimony .testimony-slide blockquote {
+    width: 100%;
+  }
+}
+#legionmarket-testimony .wrap-testimony .testimony-slide blockquote p {
+  font-style: italic;
+  color: #8f989f;
+  font-size: 20px;
+  line-height: 1.6em;
+}
+#legionmarket-testimony .wrap-testimony .testimony-slide blockquote:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: #1fb5f6;
+  left: 50%;
+  margin-left: -25px;
+  bottom: 0;
+}
+#legionmarket-testimony .wrap-testimony .testimony-slide.active {
+  display: block;
+}
+#legionmarket-testimony .wrap-testimony .arrow-thumb {
+  position: absolute;
+  top: 40%;
+  display: block;
+  width: 100%;
+}
+#legionmarket-testimony .wrap-testimony .arrow-thumb a {
+  font-size: 32px;
+  color: #dadada;
+}
+#legionmarket-testimony .wrap-testimony .arrow-thumb a:hover, #legionmarket-testimony .wrap-testimony .arrow-thumb a:focus, #legionmarket-testimony .wrap-testimony .arrow-thumb a:active {
+  text-decoration: none;
+}
+
+.getting-started {
+  background: #1fb5f6;
+  padding: 60px 0 40px 0;
+}
+.getting-started h3 {
+  color: #fff;
+}
+.getting-started p {
+  color: rgba(255, 255, 255, 0.8);
+}
+.getting-started .call-to-action {
+  display: block;
+  width: 100%;
+  float: left;
+}
+@media screen and (max-width: 992px) {
+  .getting-started .call-to-action {
+    float: none !important;
+    width: 100%;
+    text-align: left !important;
+  }
+}
+.getting-started .call-to-action a.sign-up {
+  float: right;
+  margin-top: 20px;
+  padding: 18px 60px;
+  background: #ea574c;
+  color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
+  -ms-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
+  -o-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
+}
+@media screen and (max-width: 992px) {
+  .getting-started .call-to-action a.sign-up {
+    float: left !important;
+  }
+}
+.getting-started .call-to-action a.sign-up:hover, .getting-started .call-to-action a.sign-up:focus, .getting-started .call-to-action a.sign-up:active {
+  text-decoration: none;
+}
+.getting-started .call-to-action a.sign-up:hover {
+  background: #393e46;
+}
+
+.legionmarket-pricing {
+  padding: 4em 0 6em 0;
+  background: #f1faff;
+}
+.legionmarket-pricing .pricing {
+  display: block;
+  float: left;
+  margin-bottom: 30px;
+}
+.legionmarket-pricing .price-box {
+  text-align: center;
+  padding: 30px;
+  background: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  position: relative;
+  -webkit-box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.19);
+  -ms-box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.19);
+  -o-box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.19);
+}
+.legionmarket-pricing .price-box.popular .btn-select-plan {
+  background: #ff3b30;
+}
+.legionmarket-pricing .price-box .btn-select-plan {
+  padding: 10px 20px;
+  background: #1fb5f6;
+  color: #fff;
+  -webkit-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.15);
+}
+.legionmarket-pricing .pricing-plan {
+  margin: 0 0 50px 0;
+  padding: 0;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #888f94;
+}
+.legionmarket-pricing .pricing-plan.pricing-plan-offer {
+  margin-bottom: 24px;
+}
+.legionmarket-pricing .pricing-plan span {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #d5d8db;
+}
+.legionmarket-pricing .price {
+  font-size: 72px;
+  color: #6d6d6d;
+  line-height: 50px;
+}
+.legionmarket-pricing .price .currency {
+  font-size: 30px;
+  top: -0.9em;
+  padding-right: 10px;
+}
+.legionmarket-pricing .price small {
+  font-size: 13px;
+  display: block;
+  text-transform: uppercase;
+  color: #888f94;
+}
+
+.legionmarket-services .box-services {
+  position: relative;
+  margin-bottom: 70px;
+}
+.legionmarket-services .box-services i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 54px;
+  color: #1fb5f6;
+}
+.legionmarket-services .legionmarket-post {
+  padding-left: 75px;
+}
+.legionmarket-services .legionmarket-post h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.legionmarket-services .call-to-action .btn-learn {
+  padding: 12px 30px;
+  background: #50c5f8;
+  color: #fff;
+}
+
+#legionmarket-team {
+  background: #f1faff;
+}
+#legionmarket-team .team-box {
+  position: relative;
+  padding: 30px;
+  padding-top: 5em;
+  background: #fff;
+  float: left;
+  width: 100%;
+  -webkit-box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.19);
+  -ms-box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.19);
+  -o-box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.19);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 992px) {
+  #legionmarket-team .team-box {
+    margin-bottom: 110px;
+  }
+}
+#legionmarket-team .team-box .user {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-top: -73px;
+  margin-left: -73px;
+  width: 147px;
+  height: 147px;
+}
+#legionmarket-team .team-box .user img {
+  width: 147px;
+  height: 147px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  border: 15px solid #f1faff;
+}
+#legionmarket-team .team-box h3 {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+#legionmarket-team .team-box .position {
+  font-size: 16px;
+  color: #8f989f;
+  display: block;
+  margin-bottom: 30px;
+}
+#legionmarket-team .team-box .social-media {
+  margin: 0;
+  padding: 0;
+}
+#legionmarket-team .team-box .social-media li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  margin-right: 10px;
+}
+#legionmarket-team .team-box .social-media li a {
+  color: #333;
+}
+#legionmarket-team .team-box .social-media li a:hover, #legionmarket-team .team-box .social-media li a:focus, #legionmarket-team .team-box .social-media li a:active {
+  text-decoration: none;
+  color: #ff3b30 !important;
+}
+
+.box-faq {
+  margin-bottom: 60px;
+}
+.box-faq h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.partner-logo {
+  margin-bottom: 30px;
+  float: left;
+  width: 100%;
+  vertical-align: middle;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+.section-heading {
+  float: left;
+  width: 100%;
+  padding-bottom: 50px;
+  margin-bottom: 0px;
+  clear: both;
+}
+.section-heading h2 {
+  margin: 0 0 0 0;
+  font-size: 40px;
+  font-weight: 400;
+  color: #333;
+  position: relative;
+  display: block;
+  padding-bottom: 10px;
+  line-height: 1.5;
+}
+@media screen and (max-width: 768px) {
+  .section-heading h2 {
+    font-size: 28px;
+  }
+}
+.section-heading h3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #8f989f;
+  position: relative;
+  display: block;
+  padding-bottom: 30px;
+}
+.section-heading h3:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: #1fb5f6;
+  left: 50%;
+  margin-left: -25px;
+  bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .section-heading h3 {
+    font-size: 16px !important;
+    line-height: 28px;
+  }
+}
+
+#legionmarket-footer {
+  background: #3f5267;
+  color: #74889e;
+}
+#legionmarket-footer a {
+  color: #74889e;
+}
+#legionmarket-footer a:hover {
+  color: #fff !important;
+  text-decoration: underline;
+}
+#legionmarket-footer .section-title {
+  font-size: 22px;
+  color: #fff;
+  position: relative;
+  padding-bottom: 20px;
+}
+#legionmarket-footer .section-title:after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 35px;
+  height: 2px;
+  background: #1fb5f6;
+}
+#legionmarket-footer .copy-right {
+  position: relative;
+  padding-top: 20px;
+  margin-top: 40px;
+}
+#legionmarket-footer .copy-right > a {
+  color: rgba(255, 255, 255, 0.4);
+}
+#legionmarket-footer .copy-right:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  display: block;
+  width: 35px;
+  height: 2px;
+  background: #1fb5f6;
+}
+#legionmarket-footer .contact-info {
+  margin: 0 0 60px 0;
+  padding: 0;
+}
+#legionmarket-footer .contact-info li {
+  font-size: 16px;
+  list-style: none;
+  margin: 0 0 20px 0;
+  position: relative;
+  padding-left: 40px;
+}
+#legionmarket-footer .contact-info li i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 22px;
+  color: #1fb5f6;
+}
+#legionmarket-footer .social-media {
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+#legionmarket-footer .social-media li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  margin-right: 10px;
+}
+#legionmarket-footer .social-media li a {
+  color: #1fb5f6;
+}
+#legionmarket-footer .social-media li a:hover, #legionmarket-footer .social-media li a:focus, #legionmarket-footer .social-media li a:active {
+  text-decoration: none;
+}
+#legionmarket-footer .contact-form .form-group input[type="name"],
+#legionmarket-footer .contact-form .form-group input[type="text"],
+#legionmarket-footer .contact-form .form-group input[type="email"],
+#legionmarket-footer .contact-form .form-group textarea {
+  font-size: 16px;
+}
+#legionmarket-footer .contact-form .form-group input[type="name"]::-webkit-input-placeholder,
+#legionmarket-footer .contact-form .form-group input[type="text"]::-webkit-input-placeholder,
+#legionmarket-footer .contact-form .form-group input[type="email"]::-webkit-input-placeholder,
+#legionmarket-footer .contact-form .form-group textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#legionmarket-footer .contact-form .form-group input[type="name"]:-moz-placeholder,
+#legionmarket-footer .contact-form .form-group input[type="text"]:-moz-placeholder,
+#legionmarket-footer .contact-form .form-group input[type="email"]:-moz-placeholder,
+#legionmarket-footer .contact-form .form-group textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(255, 255, 255, 0.5);
+}
+#legionmarket-footer .contact-form .form-group input[type="name"]::-moz-placeholder,
+#legionmarket-footer .contact-form .form-group input[type="text"]::-moz-placeholder,
+#legionmarket-footer .contact-form .form-group input[type="email"]::-moz-placeholder,
+#legionmarket-footer .contact-form .form-group textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(255, 255, 255, 0.5);
+}
+#legionmarket-footer .contact-form .form-group input[type="name"]:-ms-input-placeholder,
+#legionmarket-footer .contact-form .form-group input[type="text"]:-ms-input-placeholder,
+#legionmarket-footer .contact-form .form-group input[type="email"]:-ms-input-placeholder,
+#legionmarket-footer .contact-form .form-group textarea:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#legionmarket-footer .contact-form .form-group input {
+  color: #fff;
+  background: transparent;
+  border: none;
+  background: #485b71;
+  box-shadow: none;
+}
+#legionmarket-footer .contact-form .form-group textarea {
+  color: #fff;
+  background: transparent;
+  border: none;
+  background: #485b71;
+  box-shadow: none;
+}
+#legionmarket-footer #btn-submit {
+  color: rgba(255, 255, 255, 0.9) !important;
+  background: #ff3b30 !important;
+}
+
+.btn {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.legionmarket-nav-toggle {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.legionmarket-nav-toggle.active i::before, .legionmarket-nav-toggle.active i::after {
+  background: #ff3b30;
+}
+.legionmarket-nav-toggle:hover, .legionmarket-nav-toggle:focus, .legionmarket-nav-toggle:active {
+  outline: none;
+  border-bottom: none !important;
+}
+.legionmarket-nav-toggle i {
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  width: 25px;
+  height: 3px;
+  color: #535659;
+  font: bold 14px/.4 Helvetica;
+  text-transform: uppercase;
+  text-indent: -55px;
+  background: #535659;
+  transition: all .2s ease-out;
+}
+.legionmarket-nav-toggle i::before, .legionmarket-nav-toggle i::after {
+  content: '';
+  width: 25px;
+  height: 3px;
+  background: #535659;
+  position: absolute;
+  left: 0;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.legionmarket-nav-toggle i::before {
+  top: -7px;
+}
+
+.legionmarket-nav-toggle i::after {
+  bottom: -7px;
+}
+
+.legionmarket-nav-toggle:hover i::before {
+  top: -10px;
+}
+
+.legionmarket-nav-toggle:hover i::after {
+  bottom: -10px;
+}
+
+.legionmarket-nav-toggle.active i {
+  background: transparent;
+}
+
+.legionmarket-nav-toggle.active i::before {
+  top: 0;
+  -webkit-transform: rotateZ(45deg);
+  -moz-transform: rotateZ(45deg);
+  -ms-transform: rotateZ(45deg);
+  -o-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+
+.legionmarket-nav-toggle.active i::after {
+  bottom: 0;
+  -webkit-transform: rotateZ(-45deg);
+  -moz-transform: rotateZ(-45deg);
+  -ms-transform: rotateZ(-45deg);
+  -o-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+}
+
+.legionmarket-nav-toggle {
+  position: absolute;
+  top: 2px;
+  right: 15px;
+  z-index: 21;
+  padding: 6px 0 0 0;
+  display: block;
+  margin: 0 auto;
+  display: none;
+  height: 44px;
+  width: 25px;
+  border-bottom: none !important;
+}
+@media screen and (max-width: 768px) {
+  .legionmarket-nav-toggle {
+    display: block;
+  }
+}
+
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn.btn-primary {
+  background: #ff3b30;
+  color: #fff;
+  border: none !important;
+  border: 2px solid transparent !important;
+}
+.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
+  box-shadow: none;
+  background: #ff3b30;
+}
+.btn:hover, .btn:active, .btn:focus {
+  background: #393e46 !important;
+  color: #fff;
+  outline: none !important;
+}
+.btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
+  border-color: transparent;
+}
+
+.social {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+.social li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+.social li a {
+  font-size: 16px;
+  display: table;
+  width: 40px;
+  height: 40px;
+  margin: 0 4px;
+}
+.social li a i {
+  display: table-cell;
+  vertical-align: middle;
+}
+.social li a:hover, .social li a:active, .social li a:focus {
+  text-decoration: none;
+  border-bottom: none;
+}
+.social li a.social-box {
+  background: #ff3b30;
+  color: #fff;
+}
+.social li a.social-circle {
+  background: #ff3b30;
+  color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.social li a:hover {
+  background: #393e46 !important;
+}
+.social.social-box a {
+  background: #ff3b30;
+  color: #fff;
+}
+.social.social-circle a {
+  background: #ff3b30;
+  color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+#map {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  #map {
+    height: 200px;
+  }
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+  opacity: 1;
+}
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+.js .to-animate,
+.js .to-animate-2,
+.js .to-animate-3,
+.js .single-animate {
+  opacity: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .col-xxs-12 {
+    float: none;
+    width: 100%;
+  }
+}
+
+.row-bottom-padded-lg {
+  padding-bottom: 7em;
+}
+@media screen and (max-width: 768px) {
+  .row-bottom-padded-lg {
+    padding-bottom: 2em;
+  }
+}
+
+.row-bottom-padded-md {
+  padding-bottom: 4em;
+}
+@media screen and (max-width: 768px) {
+  .row-bottom-padded-md {
+    padding-bottom: 2em;
+  }
+}
+
+.row-bottom-padded-sm {
+  padding-bottom: 2em;
+}
+@media screen and (max-width: 768px) {
+  .row-bottom-padded-sm {
+    padding-bottom: 2em;
+  }
+}
+
+.legionmarket-animated {
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.owl-carousel .owl-controls .owl-dot span {
+  background: #e6e6e6;
+}
+.owl-carousel .owl-controls .owl-dot span:hover, .owl-carousel .owl-controls .owl-dot span:focus {
+  background: #cccccc;
+}
+.owl-carousel .owl-controls .owl-dot:hover span, .owl-carousel .owl-controls .owl-dot:focus span {
+  background: #cccccc;
+}
+.owl-carousel .owl-controls .owl-dot.active span {
+  background: transparent;
+  border: 2px solid #ff3b30;
+}
+
+/*# sourceMappingURL=style.css.map */

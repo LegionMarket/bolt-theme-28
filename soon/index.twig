@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Soon - 
+{%- if record.title is defined %}{{ record.title|striptags }} | {% endif -%}
+{{ app.config.get('general/sitename') -}}
+{% if record.title is not defined and app.config.get('general/payoff') %} | {{ app.config.get('general/payoff') }}{% endif -%}
+</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+  <!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FREEHTML5.CO
+		
+	Website: 		http://theme.legionmarket.com/
+	Email: 			info@theme.legionmarket.com
+	Twitter: 		http://twitter.com/legionmarket
+	Facebook: 		https://www.facebook.com/legionmarket
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{{ paths.theme }}css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{{ paths.theme }}css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{{ paths.theme }}css/bootstrap.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{{ paths.theme }}css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="{{ paths.theme }}js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="{{ paths.theme }}js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+	<div class="legionmarket-loader"></div>
+	
+	<div id="page">
+
+	<div id="legionmarket-container" class="js-fullheight">
+		<div class="countdown-wrap js-fullheight">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<div class="display-t js-fullheight">
+						<div class="display-tc animate-box">
+							<nav class="legionmarket-nav" role="navigation">
+								<div id="legionmarket-logo"><a href="index.html">Soon<strong>.</strong></a></div>
+							</nav>
+							<h1>We Are Coming Soon!</h1>
+							<h2>Free html5 templates Made by <a href="http://theme.legionmarket.com/" target="_blank">theme.legionmarket.com</a></h2>
+							<div class="simply-countdown simply-countdown-one"></div>
+							<div class="row">
+								<div class="col-md-12 desc">
+									<h2>Our webiste is opening soon. <br> Please register to notify you when it's ready!</h2>
+									<form class="form-inline" id="legionmarket-header-subscribe">
+										<div class="col-md-12 col-md-offset-0">
+											<div class="form-group">
+												<input type="text" class="form-control" id="email" placeholder="Get notify by email">
+												<button type="submit" class="btn btn-primary">Subscribe</button>
+											</div>
+										</div>
+									</form>
+									<ul class="legionmarket-social-icons">
+										<li><a href="#"><i class="icon-twitter-with-circle"></i></a></li>
+										<li><a href="#"><i class="icon-facebook-with-circle"></i></a></li>
+										<li><a href="#"><i class="icon-linkedin-with-circle"></i></a></li>
+										<li><a href="#"><i class="icon-dribbble-with-circle"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bg-cover js-fullheight" style="background-image:url(images/img_bg_1.jpg);">
+			
+		</div>
+	</div>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="{{ paths.theme }}js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="{{ paths.theme }}js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="{{ paths.theme }}js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="{{ paths.theme }}js/jquery.waypoints.min.js"></script>
+
+	<!-- Count Down -->
+	<script src="{{ paths.theme }}js/simplyCountdown.js"></script>
+	<!-- Main -->
+	<script src="{{ paths.theme }}js/main.js"></script>
+
+	<script>
+    var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
+
+    // default example
+    simplyCountdown('.simply-countdown-one', {
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate()
+    });
+
+    //jQuery example
+    $('#simply-countdown-losange').simplyCountdown({
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+        enableUtc: false
+    });
+</script>
+
+	</body>
+</html>
+
